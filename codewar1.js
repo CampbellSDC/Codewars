@@ -61,3 +61,74 @@ function solution(num){
 }
 
 solution(25)
+
+
+// We need a function that can transform a string into a number. What ways of achieving this do you know?
+
+// Note: Don't worry, all inputs will be strings, and every string is a perfectly valid representation of an integral number.
+
+// SOLUTION: parseInt() - parses a string and returns a whole number
+
+const stringToNumber = function(str){
+  return parseInt(str)
+   
+ }
+
+
+//  Introduction
+
+//  The first century spans from the year 1 up to and including the year 100, the second century - from the year 101 up to and including the year 200, etc.
+ 
+// Task
+ 
+//  Given a year, return the century it is in.
+
+// SOLUTION:
+
+ function century(year) {
+
+  return Math.ceil(year/100);
+}
+
+
+
+// Your task is to create a function that does four basic mathematical operations.
+
+// The function should take three arguments - operation(string/char), value1(number), value2(number).
+// The function should return result of numbers after applying the chosen operation.
+
+// Had to look this one up, but the "eval" function takes strings and returns the value of that string considered
+// as a math operation. So, in this case, you would just place the operator in between the two values
+
+// SOLUTION:
+
+function basicOp(operation, value1, value2)
+{
+  return eval(value1 + operation + value2)
+}
+
+
+
+// Return the number (count) of vowels in the given string.
+
+// We will consider a, e, i, o, u as vowels for this Kata (but not y).
+
+// The input string will only consist of lower case letters and/or spaces.
+
+// This was a tough one, as I had not used a for...of loop up to this point. 
+
+// SOLUTION:
+
+
+function getCount(str) {
+  let vowelsCount = 0;
+  const vowels = ['a', 'e', 'i', 'o', 'u']
+  
+for (let char of str){
+  if (vowels.includes(char)){
+    vowelsCount++
+  }
+}
+  
+  return vowelsCount;
+}
