@@ -159,3 +159,40 @@ function highAndLow(numbers){
   })
    return sorted[sorted.length-1] + " " + sorted[0]
  }
+
+
+
+// Make a function that will return a greeting statement that uses an input; your program 
+// should return, "Hello, <name> how are you doing today?".
+
+
+//  SOLUTION:
+
+
+
+function greet(name){
+  return `Hello, ${name} how are you doing today?`;
+}
+
+
+
+
+// Task
+
+// Given an integral number, determine if it's a square number:
+
+//     In mathematics, a square number or perfect square is an integer that is the square of an integer; in other words, it is the product of some integer with itself.
+
+// The tests will always use some integral number, so don't worry about that in dynamic typed languages.
+
+var isSquare = function(n){
+  
+  if (Number.isInteger(Math.sqrt(n))){
+    return true
+  } else {
+    return false; // fix me
+  }
+  
+}
+
+
